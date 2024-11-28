@@ -2,12 +2,14 @@ package mk.ukim.finki.wp.lab.repository;
 
 
 import mk.ukim.finki.wp.lab.model.Artist;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 public class ArtistRepository {
-    private List<Artist> artists = List.of(
+    public static List<Artist> artists = List.of(
             new Artist(1L, "Troy", "Laurissa", "/"),
             new Artist(2L, "Delphia", "Alisha", "/"),
             new Artist(3L, "Vanessa", "Sherisse", "/"),

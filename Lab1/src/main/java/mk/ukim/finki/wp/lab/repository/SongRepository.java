@@ -2,9 +2,11 @@ package mk.ukim.finki.wp.lab.repository;
 
 import mk.ukim.finki.wp.lab.model.Artist;
 import mk.ukim.finki.wp.lab.model.Song;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public class SongRepository {
     private List<Song> songs = List.of(
       new Song("1", "still need horizon", "dance", 2001, List.of()),
