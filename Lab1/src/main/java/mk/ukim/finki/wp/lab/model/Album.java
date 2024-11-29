@@ -8,11 +8,11 @@ import java.util.List;
 
 @Data
 @AllArgsConstructor
-public class Song {
+public class Album {
     @Id
-    String trackId;
-    String title;
-    String genre;
-    int releaseYear;
-    List<Artist> performers;
+    private Long id;
+    private String name;
+    private String genre;
+    private String releaseYear;
+    private List<Song> songs;
 }
